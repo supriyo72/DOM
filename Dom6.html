@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo</title>
+
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li style="display: none;">Delivery</li>
+    </ul>
+
+    <script>
+        let menu= document.getElementById("menu");
+        let list= document.createElement("li");
+        list.innerHTML = "Services";
+        menu.appendChild(list);
+
+        //textContent
+        console.log(menu.textContent);   //will display all the contents inside menu incl Delivery
+        console.log(menu.innerText);     //will display all the contents inside menu excl Delivery
+
+        
+
+    </script>
+</body>
+</html>

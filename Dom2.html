@@ -1,0 +1,45 @@
+<!-- queryselectorAll,queryselector -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom2</title>
+</head>
+<body>
+    <h1 class="mssg">Heading-1</h1>
+    <h1 class="mssg">Heading-3</h1>
+    <h4 class="mssg">Heading-4</h4>
+    <h2 class="mssg">Heading-5</h2>
+
+    <div id="container">
+        <h2 class="mssg">Heading-6</h2>
+        <h2 class="mssg">Heading-7</h2>
+    </div>
+
+    <script>
+        let msg1= document.querySelector(".mssg");
+        let msg2= document.querySelectorAll(".mssg");
+        let cont= document.getElementById("container");
+        let msg3= cont.querySelectorAll(".mssg");
+        console.log(msg1);
+        console.log(msg2);
+        console.log(msg3);
+
+        let msg4= document.querySelectorAll("h4");
+        let msg5= document.querySelectorAll("div");
+        let msg6= document.querySelectorAll("div,h1,h4");
+        let msg7= document.querySelectorAll("div,h1");
+        console.log(msg4);
+        console.log(msg5);
+        console.log(msg6);
+        console.log(msg7);
+
+        let msg8= document.querySelectorAll("#container");
+        console.log(msg8);
+        let msg9= document.querySelectorAll("h2");
+        console.log(msg9);
+
+    </script>
+</body>
+</html>

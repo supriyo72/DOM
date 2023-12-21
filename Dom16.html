@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom16</title>
+</head>
+<body>
+    <h1 id="myId" class="main message">Supriyo</h1>
+    <script>
+        let h1Box= document.getElementById("myId");
+        console.log(h1Box.classList);
+        h1Box.classList.add("new");
+
+        h1Box.classList.replace("message","msg");
+
+        h1Box.classList.remove("msg");
+
+        h1Box.classList.add("myClass","myCLASS");
+
+        console.log(h1Box.classList.contains("myClass"));  //true
+        console.log(h1Box.classList.contains("myName"));  //false
+
+        //toggle: toggle will remove the class name if it is available and will override if not available
+        h1Box.classList.toggle("myName");  //will override these class into h1-class
+        h1Box.classList.toggle("myCLASS");  //will remove myCLASS as it is already there in h1-class
+        
+        console.log(h1Box)
+
+
+    </script>
+</body>
+</html>

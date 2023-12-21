@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document19</title>
+</head>
+<body>
+    <div id="container">
+        <button id="btn">CLICK ME</button>
+    </div>
+    <script>
+        let myId= document.getElementById("btn");
+        //addEventListener(event,function)
+        let displayInfo= function Display()
+        {
+            console.log("Button clicked");
+            console.log(event.type);
+            //console.log(event.target);
+            //console.log(this.id);
+        }
+        myId.addEventListener('click',displayInfo);
+        //myId.removeEventListener('click',displayInfo);
+    </script>
+</body>
+
+</html>

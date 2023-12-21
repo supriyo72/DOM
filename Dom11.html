@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom11</title>
+</head>
+<body>
+    <input type="text" name="myname" id="Name" placeholder="Enter your name">
+    <script>
+        let inputBox= document.getElementById("Name");
+        console.log(inputBox.attributes);
+
+        console.log(inputBox.getAttribute("type"));
+        console.log(inputBox.getAttribute("placeholder"));
+
+        inputBox.setAttribute("class","myClass");
+        console.log(inputBox);
+
+        console.log(inputBox.hasAttribute("placeholder"));  //true
+        inputBox.removeAttribute("class");
+        console.log(inputBox.hasAttribute("class")); //false      
+        console.log(inputBox);
+    </script>
+</body>
+</html>

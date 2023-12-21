@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom12</title>
+</head>
+<body>
+    <input type="text" name="myname" id="Name" placeholder="Enter your name" style="background-color: antiquewhite; font-size: 10px; margin:5px">
+    <script>
+        let inputBox= document.getElementById("Name");
+
+        //inputBox.style.cssText= "width:200px"; //will overtake all the methods/features in style
+        //console.log(inputBox);
+          
+
+        inputBox.style.cssText += "width: 200px; height:100px";   //will override with style methods
+        console.log(inputBox);
+        
+    </script>
+</body>
+</html>

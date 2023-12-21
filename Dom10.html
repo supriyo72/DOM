@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo</title>
+
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <p>Hello darshako kaise ho</p>
+        <li>Delivery</li>
+        <li>Social media</li>
+        <li>Gossips</li>
+    </ul>
+
+
+    <script>
+        
+        let menu= document.getElementById("menu");
+        let li1= document.getElementsByTagName("li");
+        let fourth= li1[3];
+        let fifth= li1[4];
+
+        let create1= document.createElement("li");
+        create1.textContent="Transfer";
+
+        let create2= document.createElement("p");
+        create2.textContent="Good morning ladies and gentlemen";
+
+        menu.insertBefore(create1,fourth);
+        menu.insertBefore(create2,fifth);
+        console.log(li1[0]);
+    </script>
+</body>
+</html>

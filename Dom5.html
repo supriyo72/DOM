@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo Docs</title>
+</head>
+<body>
+    <script>
+        let create1= document.createElement("p");
+        let create2= document.createElement("div");
+        console.log(create1);
+        console.log(create2);
+        create2.innerHTML= "<p>Welcome to India</p>"
+        create2.id="myID";
+        create2.className="myClass";
+        document.body.appendChild(create2);
+
+        create1.innerHTML= "I am a paragraph";
+        create1.id="pid";
+        create1.className="pClass";
+        document.body.appendChild(create1);
+        
+
+    </script>
+</body>
+</html>

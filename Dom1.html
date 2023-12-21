@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        <p id="IT">2024 worst year for IT Freshers</p>
+    </div>
+    <label for="Mymsg">MESSAGE</label>
+    <div>
+        <input type="radio" name="language" id="Mymsg">
+        <input type="text" name="language" id="Mymsg">
+        <input type="email" name="language" id="Mymsg">
+    </div>
+    <div>
+        Gender: Male<input type="radio" name="myGend"> Female:<input type="radio" name="myGend">
+    </div>
+
+    <h1 class="mssg">Heading-1</h1>
+    <h1 class="mssg">Heading-3</h1>
+    <h4 class="mssg">Heading-4</h4>
+
+    <div id="container">
+        <h2 class="mssg">Heading-4</h2>
+        <h2 class="mssg">Heading-4</h2>
+    </div>
+    
+    <script>
+        let msg= document.getElementById("IT");
+        console.log(msg);
+
+        let name1= document.getElementsByName("language");
+        console.log(name1);
+
+        let name2= document.getElementsByName("myGend");
+        console.log(name2);
+
+
+        
+        let heading1= document.getElementsByTagName("h1");
+        let heading2= document.getElementsByTagName("h4");
+        console.log(heading1);
+        console.log(heading2);
+
+        let class1= document.getElementsByClassName("mssg");
+        console.log(class1);
+        
+        let cont= document.getElementById("container");
+        let class2= cont.getElementsByClassName("mssg");
+        console.log(class2);
+
+    </script>
+</body>
+</html>

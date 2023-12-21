@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document18</title>
+</head>
+<body>
+    <div id="container">
+        <button id="btn">CLICK ME</button>
+    </div>
+
+    <div id="cont">
+        <button type="button" id="btn1">TAP HERE</button>
+    </div>
+
+    <script>
+        let myId= document.getElementById("btn");
+        myId.onclick= function myClick()
+        {
+            console.log("Clicked successfully");
+        }
+
+        let myID= document.getElementById("btn1");
+        myID.onclick= function myCl()
+        {
+            console.log(this.type);
+            console.log(this.id);
+        }
+    </script>
+</body>
+
+</html>

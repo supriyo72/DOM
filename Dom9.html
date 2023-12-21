@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo</title>
+
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+        <li>Services</li>
+        <li>Delivery</li>
+        <li>Social media</li>
+        <li>Gossips</li>
+    </ul>
+
+
+    <script>
+        
+        let menu= document.getElementById("menu");
+        let clone= menu.cloneNode(true);
+        console.log(clone);
+        
+        let li1= document.getElementsByTagName("li");
+        let fourth= li1[3];
+        let sixth= li1[5];
+
+        menu.removeChild(fourth);
+        menu.removeChild(sixth);
+        menu.removeChild(menu.firstElementChild);
+        menu.removeChild(menu.lastElementChild);
+
+    </script>
+</body>
+</html>

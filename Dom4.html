@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreatStack</title>
+</head>
+<body>
+
+    <div class="container">
+        <p>Welcome to GreatStack-1</p>
+        <p>Welcome to GreatStack-2</p>
+        <p class="text">Welcome to GreatStack-3</p>
+        <p>Welcome to GreatStack-4</p>
+    </div>
+    <script>
+
+        let previous= document.querySelector(".text");
+        console.log(previous.previousElementSibling);
+        let next= document.querySelector(".text");
+        console.log(next.nextElementSibling);
+    </script>
+</body>
+</html>

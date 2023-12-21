@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo</title>
+
+</head>
+<body>
+    <ul id="menu">
+        <li>Home</li>
+        <li>About us</li>
+        <li>Contact</li>
+    </ul>
+
+
+    <script>
+        let menu= document.getElementById("menu");
+        let create1= document.createElement("li");
+        create1.innerHTML="Delivery";
+        menu.after(create1);
+        let create2= document.createElement("li");
+        create2.innerHTML="Services";
+        menu.after(create2);
+
+        //after is not included in menu
+        let str = "Social media";
+        menu.after(str);
+        let str1="instagram ";
+        let str2="whatssapp ";
+        let str3="facebook ";
+        menu.after(str1,str2,str3);
+
+
+        //append prepend comes under menu
+        let str4="Twitter ";
+        let str5="snapchat ";
+        let str6="quora ";
+        menu.append(str4,str5,str6);
+
+        let create3= document.createElement("li");
+        create3.innerHTML="Updates";     
+        let str7="Media";
+        menu.prepend(create3,str7);
+
+        menu.insertAdjacentHTML("beforebegin","<p>welcome to supriyo organisation</p>");
+        menu.insertAdjacentHTML("afterbegin","<h1>Hello Everyone</h1>");
+        menu.insertAdjacentHTML("beforeend","<p>Its time to leave</p>");
+        menu.insertAdjacentHTML("afterend","<h2>Thank you</h2>");
+
+        
+        let create4= document.createElement("li");  //can also take p,div
+        create4.textContent="Gossips";
+        
+        let create5= document.createElement("li");
+        create5.innerHTML="Daily-Updates";
+
+        //replacechild
+        menu.replaceChild(create4,menu.lastElementChild);
+        menu.replaceChild(create5,menu.firstElementChild);
+        
+        //replacing 2nd elements
+        let create6= document.createElement("li");
+        create6.innerHTML="HOME";
+
+
+        let tag1= document.getElementsByTagName("li");
+        let replace1= tag1[1];
+        menu.replaceChild(create6,replace1);
+
+    </script>
+</body>
+</html>
